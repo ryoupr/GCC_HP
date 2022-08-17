@@ -1,0 +1,16 @@
+<html>
+        import Header from '@/components/organisms/header.js'
+
+    export default function Layout({ children }) {
+    return (
+        <>
+        {/* ヘッダーを固定する */}
+        <div className="sticky top-0 z-50">
+            <Header />
+        </div>
+        {/* メインコンテンツ */}
+        <div>{children}</div>
+        </>
+    )
+    }
+</html>
