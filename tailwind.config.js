@@ -2,7 +2,11 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'GCalendarBlur':"url('./img/GCalendar_Blur.png')",
+      })
+    },
   },
   plugins: [],
 }
