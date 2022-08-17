@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'GCalendarBlur':"url('./img/GCalendar_Blur.png')",
+        'GCalendarBlur':"url('../img/GCalendar_Blur.png')",
       })
     },
   },
