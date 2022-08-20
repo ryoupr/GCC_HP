@@ -1,10 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    './index.html',
+  ],
   theme: {
     extend: {
-      backgroundImage: theme => ({
-        'GCalendarBlur':"url('../img/GCalendar_Blur.png')",
+        backgroundImage: theme => ({
+         'calendar_blur': "url('../img/GCalendar_Blur.png')",
       })
     },
   },
