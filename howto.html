@@ -16,39 +16,74 @@
       </p>
     </h1>
     <nav
-      class="sticky top-0 z-50 flex items-center justify-between flex-wrap bg-green-500 p-6"
+      class="sticky top-0 items-center justify-between flex p-6 bg-gradient-to-r from-green-300 to-blue-400"
     >
-      <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <a href="./index.html">
-          <img class="fill-current h-8 w-8 mr-2" src="./img/GCCIcon.png" />
-          <img />
-        </a>
-        <span class="font-semibold text-xl tracking-tight"></span>
-      </div>
-      <div class="block lg:hidden"></div>
-      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div class="text-sm lg:flex-grow">
-          <a
-            href="./howto.html"
-            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-          >
-            How to
-          </a>
-          <a
-            href="./examples.html"
-            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-          >
-            Examples
-          </a>
-        </div>
-        <div>
-          <a
-            href="./download/GCCInstaller.exe"
-            class="inline-block text-sm px-4 py-2 leading-none border rounded text-blue-900 bg-blue-400 border-white hover:border-transparent hover:text-teal-500 hover:bg-blue-200 mt-4 lg:mt-0"
-            >Download</a
-          >
-        </div>
-      </div>
+      <a href="./index.html" class="h-8 w-8">
+        <img src="./img/GCCIcon.png" />
+        <img />
+      </a>
+      <a
+        href="./howto.html"
+        class="text-teal-200 hover:underline hover:text-red-500"
+      >
+        How to
+      </a>
+      <a
+        href="./examples.html"
+        class="text-teal-200 hover:underline hover:text-red-500"
+      >
+        Examples
+      </a>
+      <a
+        href="./test.html"
+        class="text-teal-200 hover:underline hover:text-red-500"
+        >Test</a
+      >
+      <a
+        href="./download/GCCInstaller.exe"
+        class="text-sm px-4 py-2 border rounded bg-blue-500 border-white hover:bg-green-400"
+        >Download</a
+      >
     </nav>
+    <!-- 紹介文 -->
+    <div class="m-3 flex flex-col min-h-screen flex-grow bg-GCalendarBlur">
+      <div class="my-3 flex">
+        <img
+          class="w-14 flex-none"
+          src="./img/GCCIcon_clear.png"
+          alt="GCCIcon"
+        />
+        <p class="text-5xl flex-initial">スケジュール登録をもっと便利に!!</p>
+      </div>
+      <div class="my-3"></div>
+    </div>
+    <footer class="bottom-0">
+      <div class=" flex justify-center">
+        <a href="./index.html class" class="flex flex-nowrap">
+          <img src="./img/GCCIcon_clear.png" alt="GCC_Icon" class="t-8 w-8" />
+          <p class="font-bold mr-20 text-3xl">GCC</p>
+        </a>
+        <ul class="flex flex-wrap">
+          <li>
+            <a
+              href="https://github.com/ryoupr/GCalendarClient"
+              class="mr-6 hover:underline hover:text-white text-xl"
+              >Git Hub</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:k019c1355@g.neec.ac.jp"
+              class="hover:underline hover:text-white text-xl"
+              >Connect</a
+            >
+          </li>
+        </ul>
+      </div>
+      <hr class="my-2 border-green-900" />
+      <span class=" flex justify-center text-sm underline"
+        >&copy; copyright 2022 R.T. All Rights Reserved.</span
+      >
+    </footer>
   </body>
 </html>
