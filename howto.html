@@ -41,7 +41,67 @@
         >Download</a
       >
     </nav>
-    <div class="m-3 flex flex-col min-h-screen flex-grow"></div>
+    <!-- 紹介文 -->
+    <div class="bg-blue-400 rounded-3xl p-1 m-4">
+      このページではGCalendarClientの使い方を紹介していきます。
+      <br />
+      使い方といっても難しいことはありません。基本は予定情報を入力して登録を押すだけですが初回のみカレンダーIDの設定などをしなくてはなりません。<br />
+      <div class="m-4">
+        カレンダーIDの設定
+        <br />
+        <div class="m-2">
+          GCalendarClient（以後GCC）の起動が完了したら、ウィンドウ上部のナビゲーションバーから”Edit”→”settings.iniを編集”の順で選択します。
+          <br />
+          すると”setting.ini”がテキストエディタで開かれると思います。（エディタ選択画面が表示された場合はお好みで選択してください。）
+          <br />
+          ”settings.ini”内の”[CALENDAR]”の”calendarid=”の部分を予定を追加したいカレンダーのIDに変更してください。
+        </div>
+        <div class="m-2">
+          カレンダーIDの確認方法
+          <a
+            href="https://calendar.google.com/"
+            class="text-blue-700 hover:text-red-500 hover:underline"
+            >Googleカレンダー</a
+          >にアクセスします。
+          <br />
+          <img src="./img/checkcalID.png" alt="" />
+          <br />
+          画面左側に表示されているカレンダーから予定を登録したいカレンダーの縦三点リーダーをクリックし”設定と共有”をクリックします。
+          <br />
+          <img src="./img/calid.png" alt="" /><br />
+          スクロールして下のほうにカレンダーIDが出ているのでそれをコピーして”setting.ini”の”[CALENDAR]””calendarid=”部分に貼り付けます。
+          <br />
+          複数のカレンダーを使い分けている場合は複数行のの”calendarid=”を作成しておいて使用するカレンダー以外はコメントアウトしておくといいと思います。
+          <br />
+        </div>
+      </div>
+      <div>
+        予定を登録してみよう
+        <div class="m-2">
+          それでは実際に予定を登録してみたいと思います。
+          <br />
+          <img src="./img/registration.png" alt="" />
+          <br />
+          GCCを起動して登録ボタンを押してみてください。
+          <br />
+          登録を行ったGoogleCalendarに空の予定が作成されているはずです、確認してみてください。<br />
+          概要（予定のタイトル）や場所・説明などもボックス内に記入すればその通りに反映されます。<br />
+        </div>
+      </div>
+      <div>
+        予定テンプレートの登録
+        <div class="m-2">
+          GCCではよく登録する予定の情報をテンプレートとして登録しておくことができます。<br>
+          <img src="./img/temptest.png" alt=""><br>
+          試しに上の情報をテンプレートとして登録してみたいと思います。<br>
+          <img src="./img/tempregistration.png" alt=""><br>
+          このようにすることで次回起動時からテンプレートとしてこの情報を呼び出すことが可能になります。<br>
+          <img src="./img/selecttemps.png">
+          <img src="./img/calledevent.png" alt=""><br>
+          無事にテンプレートとして登録した予定の情報を呼び出すことができました。
+        </div>
+      </div>
+    </div>
     <footer class="bottom-0">
       <div class="flex justify-center">
         <a href="./index.html class" class="flex flex-nowrap">
